@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+              NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Gray100}">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                         Padding="20"
+                         Spacing="15">
+
+        <!-- Título com Fundo Colorido -->
+        <Frame BackgroundColor="Goldenrod"
+               CornerRadius="20"
+               Padding="10"
+               Margin="0,0,0,20"
+               HorizontalOptions="Center">
+            <Label Text="Sobre o Aplicativo"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   HorizontalOptions="Center" />
+        </Frame>
+
+        <!-- Informações de Desenvolvedor e Ano de Desenvolvimento -->
+        <Frame BackgroundColor="White"
+               CornerRadius="15"
+               Padding="10"
+               Margin="0,10">
+            <VerticalStackLayout>
+                <Label Text=" Nome Do Desenvolvedor:"
+                       FontSize="18"
+                       TextColor="Goldenrod"
+                       FontAttributes="Bold" />
+                <Label Text="Karen Silva"
+                       FontSize="16"
+                       TextColor="#333" />
+
+                <Label Text="Ano de Desenvolvimento:"
+                       FontSize="18"
+                       TextColor="Goldenrod"
+                       FontAttributes="Bold"
+                       Margin="0,10,0,0" />
+                <Label Text="2024"
+                       FontSize="16"
+                       TextColor="#333" />
+            </VerticalStackLayout>
+        </Frame>
+
+      
+
+        <!-- Botão Voltar -->
+        <Button Text="Voltar"
+         HorizontalOptions="Center"
+         BackgroundColor="Goldenrod"
+         Clicked="Button_Clicked" />
+
+    </VerticalStackLayout>
+</ContentPage>
+
